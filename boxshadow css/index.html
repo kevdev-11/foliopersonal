@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Box-shadow</title>
+</head>
+<body>
+    <div class="main-area">
+    <div class="container">
+        <div class="result">
+            <div id="element"></div>
+        </div>
+         <div class="sliders">
+            <div class="slider-wrapper">
+                <label for="h-shadow">Displacement-X</label>
+            <input type="range" id="h-shadow" max="100" min="-100" value="0">
+            </div>
+            <div class="slider-wrapper">
+                <label for="v-shadow">Displacement-Y</label>
+                <input type="range" id="v-shadow" max="100" min="-100" value="0">
+            </div>
+            <div class="slider-wrapper">
+                <label for="blur-radius">BlurRadius</label>
+                <input type="range" value="0" id="blur-radius" min="0" max="100">
+            </div>
+            <div class="slider-wrapper">
+                <label for="spread-radius">Spread Radius</label>
+                <input type="range" value="0" id="spread-radius" min="0" max="100">
+            </div>
+            <div class="slider-wrapper">
+                <label for="shadow-color">Shadow color:</label>
+                <input type="color" id="shadow-color">
+            </div>
+            <div class="slider-wrapper">
+                <label for="opacity">Opacity</label>
+                <input type="range" value="0" id="opacity" min="0" max="1" step="0.1">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="inset">Inset value</label>
+                <input type="checkbox" id="inset">
+            </div>
+         </div>
+
+         <div class="code-generator">
+            <textarea name="" id="code" cols="2"></textarea>
+            <button onclick="copyCode()">Copy</button>
+        </div>
+    </div>
+    <div class="box-features"> 
+        <h1>Features of BOX</h1>
+        <div class="sliders">
+            <label for="h-growth">Growth X</label>
+            <input type="range" value="0" min="30" max="300" id="h-growth">
+        </div>
+        <div class="sliders">
+            <label for="v-growth">Growth Y</label>
+            <input type="range" value="0" min="30" max="300" id="v-growth">
+        </div>
+        <div class="sliders">
+            <label for="border-r">Border Radius</label>
+            <input type="range" value="0" min="0" max="50" id="border-r">
+        </div>
+        <div class="sliders">
+            <label for="color-radius">Color Radius</label>
+            <input type="color" id="color-radius">
+        </div>
+        <div class="sliders">
+            <label for="color-box">Color Box</label>
+            <input type="color" id="color-box">
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
