@@ -5,6 +5,6 @@ primer maquetado de portafolio
 
 Herramientas digitales: Visual Studio Code+componentes (plug-in) -Git- Netlify
 
-NETLIFY: https://folioklb.netlify.app/
+NETLIFY: klbfolio.netlify.app
 
 Gracias totales!!! Academlo Student.
