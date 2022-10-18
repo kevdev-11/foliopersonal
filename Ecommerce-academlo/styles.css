@@ -1,0 +1,361 @@
+:root {
+    --background--body: #d7b9de;
+    --navbar--footer: black;
+    --lines--factor: #dddddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: var(--background--body);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+header {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 600px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.logo_setup {
+    display: flex;
+    width: 250px;
+    line-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-lab {
+    width: 60px;
+    height: 60px;
+}
+
+.container_principal {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.consoles_p {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 40px;
+    width: fit-content;
+    padding: 8px;
+    background-color: #482f66;
+    color: white;
+    border-radius: 20px;
+}
+
+.perfil_phr {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.text_stock {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first_line {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+input [type="text"] {
+    width: auto;
+}
+
+#stock_nt {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.navbar_categories {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    background-color: var(--navbar--footer);
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color:#dddddd;
+}
+
+
+
+.stock-btn {
+    width: 80px;
+    height: 40px;
+    display: inline-flex;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    padding: 10px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: #4c1391;
+    border: none;
+    z-index: 3;
+}
+
+.modal-container {
+    width: 100%;
+    height: 5vh;
+}
+
+.modal-car {
+    height: auto;
+    width: 380px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 860px;
+    border-radius: 10px;
+    padding: 30px;
+    color: black;
+    transition: 0.8s;
+}
+
+.delete-p {
+    color: red;
+    cursor: pointer;
+}
+
+.modal-car::before{
+    visibility:visible;
+}
+
+.cantidades {
+    display: flex;
+    position: relative;
+    left: 30px;
+}
+.modal-header-button {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    position: relative;
+    bottom: 15px;
+    right: -50px;
+    cursor: pointer;
+}
+.modal-header {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: 120px;
+    top: 10px;
+
+}
+#grid_template_card {
+    height:auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    justify-items: center;
+    display: grid;
+    background-color: #482f66;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+
+.card_product {
+    height: 450px;
+    width: 300px;
+    border: 2px solid var(--lines--factor);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.heading-p {
+    font-size: 12px;
+}
+
+.heading-card {
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px;
+    background-color: rgb(53, 43, 76);
+    color: var(--lines--factor);
+
+}
+
+.stock_cards {
+    background-color: #adadad;
+    display: flex;
+    position: relative;
+    top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 10vh;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
+    z-index: 0;
+
+}
+
+.stock_cards input {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    position: relative;
+    left: 50px;
+    text-align: center;
+}
+
+#cantidad {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    background-color: #adadad;
+    border-radius: 3px;
+    border: 1px solid ;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: #4c1391;
+    font-size: 22px;
+    color: var(--lines--factor);
+    text-align: center;
+}
+
+.img-modal {
+    width: 80px;
+    height: 80px;
+}
+
+.img_cards {
+    width: 250px;
+    height: 230px;
+}
+
+button {
+    width: 120px;
+    height: 6vh;
+    border-radius: 10px;
+    border-color: blue;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navbar--footer);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+    width: 1200px;
+    font-size: 18px;
+    color: white;
+}
+
+.dedicatoria {
+    font-size: 18px;
+    font-weight: 700;
+    color: #adadad;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.row-red {
+    display: inline-flex;
+    width: 100%;
+    gap:5px;
+}
+
+i {
+    font-size: 30px;
+    
+}
